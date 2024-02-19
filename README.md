@@ -14,3 +14,17 @@ To work with this test suite, you need a version of Python with GIL disabled
 - [CWE-667: Improper locking](https://cwe.mitre.org/data/definitions/667.html)
 - [CWE-833: Deadlock](https://cwe.mitre.org/data/definitions/833.html)
 
+### Environment:
+You need to install [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation) and python-nogil via this command:
+```
+pyenv install nogil-3.9.10-1
+```
+Switch python3 to nogil-3.9.10-1:
+```
+pyenv local nogil-3.9.10-1 
+```
+### Running tests:
+And all that's left to do is run this:
+```
+python3 main.py 
+```
